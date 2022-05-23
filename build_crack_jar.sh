@@ -10,8 +10,8 @@ echo -e "http_proxy: \t\t$HTTP_PROXY"
 echo -e "https_proxy: \t\t$HTTPS_PROXY"
 
 # Download source code
-curl -o LicenseVerifier.java -s https://raw.githubusercontent.com/elastic/elasticsearch/$branch/x-pack/plugin/core/src/main/java/org/elasticsearch/license/LicenseVerifier.java
-curl -o XPackBuild.java -s https://raw.githubusercontent.com/elastic/elasticsearch/$branch/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/XPackBuild.java
+curl -o LicenseVerifier.java -s https://cdn.jsdelivr.net/gh/elastic/elasticsearch@$branch/x-pack/plugin/core/src/main/java/org/elasticsearch/license/LicenseVerifier.java
+curl -o XPackBuild.java -s https://cdn.jsdelivr.net/gh/elastic/elasticsearch@$branch/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/XPackBuild.java
 
 # Edit LicenseVerifier.java
 sed -i '/.*PublicKey PUBLIC_KEY.*/i END\nCODE' LicenseVerifier.java
