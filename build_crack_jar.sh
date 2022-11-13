@@ -9,6 +9,10 @@ echo -e "version: \t\t$version"
 echo -e "http_proxy: \t\t$HTTP_PROXY"
 echo -e "https_proxy: \t\t$HTTPS_PROXY"
 
+#mkdir
+
+mkdir output
+
 # Download source code
 curl -o LicenseVerifier.java -s https://raw.githubusercontent.com/elastic/elasticsearch/$branch/x-pack/plugin/core/src/main/java/org/elasticsearch/license/LicenseVerifier.java
 curl -o XPackBuild.java -s https://raw.githubusercontent.com/elastic/elasticsearch/$branch/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/XPackBuild.java
