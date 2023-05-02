@@ -2,7 +2,7 @@ ARG VERSION
 
 FROM elasticsearch:${VERSION} AS Baseline
 
-FROM openjdk:19-jdk-buster
+FROM eclipse-temurin:19.0.2_7-jdk
 
 ARG VERSION
 ARG HTTP_PROXY
