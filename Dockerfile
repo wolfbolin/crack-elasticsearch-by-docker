@@ -2,7 +2,7 @@ ARG VERSION
 
 FROM elasticsearch:${VERSION} AS Baseline
 
-FROM openjdk:17-jdk-buster
+FROM openjdk:18.0.1-jdk-buster
 
 ARG VERSION
 ARG HTTP_PROXY
