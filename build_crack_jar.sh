@@ -28,10 +28,10 @@ javac -cp "/usr/share/elasticsearch/lib/*:/usr/share/elasticsearch/modules/x-pac
 
 # Build jar file
 cp /usr/share/elasticsearch/modules/x-pack-core/x-pack-core-$version.jar x-pack-core-$version.jar
-unzip x-pack-core-$version.jar -d ./x-pack-core-$version
+unzip -q x-pack-core-$version.jar -d ./x-pack-core-$version
 cp LicenseVerifier.class ./x-pack-core-$version/org/elasticsearch/license/
 cp XPackBuild.class ./x-pack-core-$version/org/elasticsearch/xpack/core/
-jar -cvf x-pack-core-$version.crack.jar -C x-pack-core-$version/ .
+jar -cf x-pack-core-$version.crack.jar -C x-pack-core-$version/ .
 rm -rf x-pack-core-$version
 
 # Copy output
