@@ -30,7 +30,7 @@ Run srcipt with version
 ```shell
 cd crack-elasticsearch-by-docker
 version=8.2.0
-bash crack.sh $version
+sudo bash crack.sh $version
 ```
 
 Get cracked x-pack-core-$version.jar
@@ -57,7 +57,7 @@ Users can adjust parameters according to their own needs, and this script is onl
 git clone https://github.com/wolfbolin/crack-elasticsearch-by-docker.git
 cd crack-elasticsearch-by-docker
 version=8.2.0
-sudo ./crack_and_install.sh $version
+sudo bash crack_and_install.sh $version
 ```
 
 ## Platinum License
