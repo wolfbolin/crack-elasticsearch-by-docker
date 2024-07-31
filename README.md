@@ -15,6 +15,12 @@ Crack elasticsearch 7.x / 8.x by docker
 * elasticsearch 8.11.1
 * elasticsearch 8.12.1
 
+企业版证书导入验证
+
+* elasticsearch 8.12.2
+
+**无法验证导入企业版证书后的稳定性与可用性**
+
 
 ## Usage
 
@@ -103,5 +109,4 @@ docker run -it --rm \
   -e HTTPS_PROXY="http://1.2.3.4:8080" \
   ${service_name}:${version}
 ```
-
 
